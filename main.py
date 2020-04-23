@@ -23,7 +23,7 @@ screen.blit(textImage, (50, 80))
 pygame.display.update()
 
 # How many lines are there in the origin lrc file?
-f1 = open('lrc.txt', 'r')
+f1 = open('lrc.txt', 'r', encoding='utf-8')
 linenum = len(f1.readlines())
 f1.close()
 while True:
@@ -57,8 +57,8 @@ while True:
                 with open('time.txt', 'a+') as f:
                     f.write(final + '\n')
             if keystate[pygame.K_v]:
-                f1 = open('lrc.txt', 'r')
-                f2 = open('time.txt', 'r')
+                f1 = open('lrc.txt', 'r', encoding='utf-8')
+                f2 = open('time.txt', 'r', encoding='utf-8')
                 for i in range(linenum):
                     try:
                         lrc = f1.readline()
