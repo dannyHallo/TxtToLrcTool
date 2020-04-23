@@ -1,32 +1,29 @@
-welcome!
+# hello, This is a LrcMaker.
 
-this tool allows you to transport pure lyric file to .lrc file, which includes timeline.
-of course, here's something u should do:
+----
+## What is this?
+
+> This tool allows you to tranform .txt lyric file into .lrc file, which includes timeline.
+Of course, you should add the timeline by yourself. This tool aims to help you to add the timeline easier.
+
+---
+## Usage
+1.Drag your lrc.txt into the same folder as main.py or main.exe. Then it's time to start. Simply click main.py, or main.exe, if you cannot open py file.
+
+2.press SPACE and play your music in background. When a new line of the lrc begins, press C to cut.
+
+3.Press V to finish, check the final lrc file out in the same directory(output.lrc).
 
 
-drag your lrc.txt into the same folder as main.py or main.exe
 
-open main.py or main.exe, whatever
 
-press SPACE and play your music
+----
+## You need to know that...
+Remember, the first line of of your lrc also needs your cutting!
 
-when here comes the lrc, press C to record(or cut)
+Ha, when you pressed C, the :) will turn into :D
 
-!!remember, don't forget to press C before the first line of of your lrc!!
-
-Ha, when u pressed C, the :) will turn into :D
-
-and 0.7s later, it will turn back into :)
-
+And 0.7s later, it will turn back into :)
 then you can record the next one.
 
 This special design aimed to avoid mistouch and double touch, even triple touch...
-
-aft you finished, simply press V to finish.
-
-check the final lrc file out in the same directory.
-
-
-
-enjoy this simple project! haha
-
