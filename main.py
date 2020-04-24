@@ -1,8 +1,9 @@
 import datetime
 import time
 import os
-
+import chardet
 import pygame
+
 
 
 def timePro(t):
@@ -21,6 +22,12 @@ white = 255, 255, 255
 textImage = myfont.render("Press Space to Start", True, white)
 screen.blit(textImage, (50, 80))
 pygame.display.update()
+
+f1 = open('lrc.txt', 'rb')
+
+data = f1.read()
+code = str(chardet.detect(data))
+print(code.split("'")[3])
 
 # How many lines are there in the origin lrc file?
 f1 = open('lrc.txt', 'r', encoding='utf-8')
@@ -64,7 +71,7 @@ while True:
                         lrc = f1.readline()
                         t1 = f2.readline()
                         line = t1.strip() + lrc
-                        with open('output.lrc', 'a+') as f:
+                        with open('output.lrc', 'a+', encoding='utf-8') as f:
                             f.write(line)
                     except:
                         break

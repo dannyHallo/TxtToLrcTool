@@ -19,6 +19,8 @@ Of course, you should add the timeline by yourself. This tool aims to help you t
 
 ----
 ## You need to know that...
+The origin txt file must be UTF-8 encoded
+
 Remember, the first line of of your lrc also needs your cutting!
 
 Ha, when you pressed C, the :) will turn into :D
